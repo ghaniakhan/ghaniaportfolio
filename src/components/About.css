@@ -1,0 +1,50 @@
+.about-section {
+  padding: 6rem 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 3rem;
+}
+
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.card p,
+.card ul {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.card ul {
+  padding-left: 0;
+  list-style: none;
+}

@@ -1,0 +1,142 @@
+.projects-section {
+  padding: 6rem 2rem;
+  background: #0a0a0a;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.project-card {
+  perspective: 1000px;
+  cursor: pointer;
+  height: 220px;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  padding: 1rem;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-front {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.card-back {
+  background: #00ffff;
+  transform: rotateY(180deg);
+}
+
+.project-card:hover .card-inner,
+.project-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.github-link:hover {
+  background: #555;
+}
+
+.demo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #111;
+  color: #00ffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.demo-link:hover {
+  background: #222;
+}
+.project-card h3 {
+  color: #00ffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.project-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front h3 {
+  color: #00ffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card-front p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.card-back a {
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #111;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin: 8px 0; 
+  display: inline-block;
+}
+
+.card-back a:hover {
+  background: #111;
+  color: #00ffff;
+  border-color: #00ffff;
+}
+
+.card-back p {
+  color: #111;
+  font-weight: bold;
+}
