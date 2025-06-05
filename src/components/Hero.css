@@ -27,8 +27,8 @@
   width: 300px;
   height: auto;
   border-radius: 50%;
-  /* border: 4px solid #00ffff; */
-  border: 4px solid burlywood;
+  border: 4px solid #00ffff;
+  
 }
 
 @media (max-width: 768px) {
