@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaThreads } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 import './footer.css';
 
 const Footer = () => {
@@ -22,12 +22,8 @@ const Footer = () => {
           >
             <FaLinkedin />
           </a>
-          <a
-            href="https://x.com/GhaniaKhan76693?t=Z6xow8MlGOJVmzvIKm3DBw&s=09"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaThreads />
+          <a href="tel:+923092002299" title="Call Ghania">
+            <FaPhoneAlt />
           </a>
         </div>
       </div>
